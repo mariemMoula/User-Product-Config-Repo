@@ -50,3 +50,12 @@ resilience4j:
                 waitDurationInOpenState: 10000
                 failureRateThreshold: 50
                 eventConsumerBufferSize: 10
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#  prometheus:
+#    metrics:
+#      export:
+#        enabled: true

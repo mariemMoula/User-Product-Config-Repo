@@ -14,3 +14,12 @@ server:
 spring:
   application:
     name: discovery-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#  prometheus:
+#    metrics:
+#      export:
+#        enabled: true

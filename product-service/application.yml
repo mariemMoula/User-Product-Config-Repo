@@ -52,3 +52,12 @@ resilience4j:
                 permittedNumberOfCallsInHalfOpenState: 1
                 minimumNumberOfCalls: 2
                 eventConsumerBufferSize: 10
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#  prometheus:
+#    metrics:
+#      export:
+#        enabled: true
