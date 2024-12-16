@@ -26,7 +26,15 @@ spring:
 management:
   tracing:
     sampling:
-        probability: 1.0
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#  prometheus:
+#    metrics:
+#      export:
+#        enabled: true
 
 resilience4j:
     retry:
